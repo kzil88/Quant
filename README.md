@@ -1,3 +1,5 @@
 # Quant
 For quant_trading
-This is C_ReadMe File
+
+Python File:
+Init.py ------ update all the daily price of stocks on Market. 
