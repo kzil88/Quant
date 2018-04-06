@@ -8,3 +8,4 @@ Init_A1.py ------ update all the daily price of stocks on Market(starting from 2
 Init_BigOrder.py ------ update the big-order information of stocks on Market.
 Init_Classify.py ------ update kinds of classifies of stocks on Market.
 Init_Date.py ------ update the trading date.
+Init_Finance.py ------ update the finance report of stocks on Market.
