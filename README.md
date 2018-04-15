@@ -13,3 +13,4 @@ Init_Forecast.py ------ update the forecast finance report of stocks on Market.
 Init_Fundholdings.py ------ update the fundholdings of stocks on Market.
 Init_Index.py ------ update the stock index on Market.
 Init_Index2.py ------ update the stock index on Market(version2).
+Init_Limit.py ------ update the limit stock on Market.
