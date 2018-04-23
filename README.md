@@ -19,3 +19,7 @@ Init_Profit.py ------ update the profit and divide shares of stock on Market.
 Init_RZRQ.py ------ update the RZRQ information of stock on Market.
 Init_RZRQ_Detail.py ------ update the RZRQ detail of stock on Market.
 Init_Single.py ------ update specific stock daily price information on Market.
+
+----------------------------------------------------------------------------------
+
+BP.py ------ update Q1.BP.py to branch Q1.
