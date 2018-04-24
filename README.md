@@ -21,3 +21,5 @@ Init_RZRQ_Detail.py ------ update the RZRQ detail of stock on Market.
 Init_Single.py ------ update specific stock daily price information on Market.
 
 Created Q1 
+uploaded BP.py
+uploaded ChooseStock.py
