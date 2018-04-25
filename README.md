@@ -23,3 +23,5 @@ Init_Single.py ------ update specific stock daily price information on Market.
 Created Q1 
 uploaded BP.py
 uploaded ChooseStock.py
+uploaded Q1_ChooseStock.py
+
