@@ -24,4 +24,4 @@ Created Q1
 uploaded BP.py
 uploaded ChooseStock.py
 uploaded Q1_ChooseStock.py
-
+uploaded Q1_DC.py
