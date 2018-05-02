@@ -25,4 +25,5 @@ uploaded BP.py
 uploaded ChooseStock.py
 uploaded Q1_ChooseStock.py
 uploaded Q1_DC.py
-uploaded Q2_Choose
+uploaded Q2_Choose.py
+uploaded Q2_DC.py
