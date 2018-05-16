@@ -37,3 +37,4 @@ uploaded Q3_DC.py
 uploaded Q3_Deal.py
 uploaded Q3_Filter.py
 uploaded Q3_Show_Wave.py
+uploaded Q3_Show_Wave_Current.py
