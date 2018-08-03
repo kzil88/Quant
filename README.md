@@ -45,3 +45,4 @@ uploaded F0_Init_FutureAll.py
 uploaded Init_Wave.py
 uploaded Init_StockALL.py
 uploaded Init_StockALL_Sp.py
+uploaded Cap_Update_daily.py
