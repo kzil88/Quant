@@ -337,18 +337,7 @@ class data_collect2(object):
 
         self.test_case = []
         self.test_case = np.array(
-            [cdl_2crows[-1], cdl_3blackcrows[-1], cdl_3inside[-1], cdl_3linestrike[-1], cdl_3outside[-1],
-             cdl_3starsinsouth[-1], cdl_3whitesoldiers[-1], cdl_abandonedbaby[-1], cdl_advancedblock[-1], cdl_belthold[-1],
-             cdl_breakaway[-1], cdl_closing[-1],
-             cdl_conbaby[-1], cdl_counterattack[-1], cdl_darkcloud[-1], cdl_doji[-1], cdl_dojistar[-1], cdl_dragondoji[-1],
-             cdl_eng[-1], cdl_evedoji[-1], cdl_evestar[-1], cdl_gapside[-1],
-             cdl_gravedoji[-1], cdl_hammer[-1], cdl_hanging[-1], cdl_hara[-1], cdl_haracross[-1], cdl_highwave[-1],
-             cdl_hikk[-1], cdl_hikkmod[-1], cdl_homing[-1], cdl_i3crows[-1], cdl_inneck[-1],
-             cdl_inverhammer[-1], cdl_kicking[-1], cdl_kicking2[-1], cdl_ladder[-1], cdl_longdoji[-1], cdl_longline[-1],
-             cdl_marubo[-1], cdl_matchinglow[-1], cdl_mathold[-1], cdl_morningdoji[-1],
-             cdl_morningstar[-1], cdl_onneck[-1], cdl_pier[-1], cdl_rick[-1], cdl_3methords[-1], cdl_seprate[-1],
-             cdl_shoot[-1], cdl_shortcandle[-1], cdl_spin[-1], cdl_stalled[-1], cdl_sandwich[-1], cdl_taku[-1],
-             cdl_takugap[-1], cdl_thrust[-1], cdl_tristar[-1], cdl_uni[-1], cdl_upgap[-1], cdl_xside[-1]]
+            []
         )
         self.data_train = np.array(self.data_train)
         self.data_target = np.array(self.data_target)
