@@ -179,12 +179,6 @@ class data_collect2(object):
             self.cnt_bad_sell[a] = len([x for x in self.low_list[:a + period - 1] if self.bad_sell[a] < x <= self.good_buy[a]])
             self.cnt_risk[a] = len([x for x in self.low_list[:a+period-1] if x <= self.close_list[a+period-1]])
 
-        #ARFQ
-        for b in range(len(self.avg)):
-            af,fq,process = get_arfq(np.array(self.high_list[b:b+period]),np.array(self.low_list[b:b+period]),self.good_sell[b],self.bad_sell[b],self.good_buy[b])
-            self.af.append(af)
-            self.fq.append(fq)
-            self.process.append(process)
 
         # MACD
         macd_temp = list(ta.MACD(self.close_list, 10, 20, 5))
@@ -211,47 +205,6 @@ class data_collect2(object):
         self.data_target = np.array(self.data_target[::-1])
 
 
-
-def get_arfq(list_high,list_low,good_sell,bad_sell,good_buy):
-    # 振幅af = (high-low)/len   频率 freq = 从good_selld到good_buy（或反之）的所需步长之和除以len
-    af = ((list_high - list_low).sum()) / len(list_high)
-    start_flag = 0
-    list_index = 0
-    #list_high = [float(x) for x in list_high]
-    #list_low = [float(x) for x in list_low]
-    for k in range(len(list_high)):
-        if list_high[len(list_high) - k - 1] >= good_sell:
-            start_flag = 1
-            list_index = len(list_high) - k - 1
-        elif bad_sell < list_low[len(list_high) - k - 1] <= good_buy:
-            start_flag = 2
-            list_index = len(list_high) - k - 1
-    freq_list = []
-    freq = 0
-    freq_step = []
-    process = 0
-    for l in range(list_index, len(list_high)):
-        if start_flag > 0:
-            if (divmod(start_flag, 2)[1] == 1) and (bad_sell < list_low[l] <= good_buy):
-                freq_list.append(l)
-                start_flag = start_flag + 1
-            elif (divmod(start_flag, 2)[1] == 0) and (list_high[l] >= good_sell):
-                freq_list.append(l)
-                start_flag = start_flag + 1
-        else:
-            freq = 0
-    if len(freq_list) == 1:
-        freq = 0 - (len(list_high) - freq_list[0] - 1)
-    elif len(freq_list) > 1:
-        for m in range(1, len(freq_list)):
-            freq_step.append(freq_list[len(freq_list) - m] - freq_list[len(freq_list) - 1 - m])
-        freq = np.array(freq_step).sum() / (len(freq_step))
-
-    if freq > 0:
-        process = (len(list_high) - freq_list[-1] - 1) / (freq)
-    else:
-        process = 0
-    return af,freq,process
 #
 # def kdj(date, N=9, M1=3, M2=3):
 #     datelen = len(date)
