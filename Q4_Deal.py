@@ -49,7 +49,6 @@ class Deal(object):
 
 
         except Exception as excp:
-            #db.rollback()
             print(excp)
 
         db.close()
