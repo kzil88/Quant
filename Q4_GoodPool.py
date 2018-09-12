@@ -129,5 +129,4 @@ def goodpool_init(state_dt):
         db.commit()
     print('ALL FINISHED !!')
     db.close()
-
     return 1
