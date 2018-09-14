@@ -17,12 +17,10 @@ if __name__ == '__main__':
     start_dt = (datetime.datetime.now() - datetime.timedelta(days=366)).strftime('%Y-%m-%d')
     end_dt = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%Y-%m-%d')
 
-
     dc = DC_Single.data_collect2('000725',start_dt,end_dt)
     train = dc.data_train
     target = dc.data_target
     test_case = [dc.test_case]
-
     w = 5*(len(target)/dc.cnt_pos)
     model = svm.SVC(class_weight={1:w})
     model.fit(train,target)
