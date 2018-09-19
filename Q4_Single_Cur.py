@@ -21,7 +21,6 @@ if __name__ == '__main__':
     start_dt = (datetime.datetime.now() - datetime.timedelta(days=366)).strftime('%Y-%m-%d')
     end_dt = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%Y-%m-%d')
 
-
     dc = DC_Single.data_collect2('600000',start_dt,end_dt)
     train = dc.data_train
     target = dc.data_target
