@@ -44,7 +44,8 @@ def ModelEvaluate(stock,date_seq):
     cursor.execute(sql_resu_recall_mon)
     recall_mon = cursor.fetchall()[0][0]
     recall = recall_son / recall_mon
-
+    
+    
     sql_resu_acc_neg_son = "select count(*) from model_test a where a.resu_real is not null and a.resu_predict = -1 and a.resu_real = -1"
     cursor.execute(sql_resu_acc_neg_son)
     acc_neg_son = cursor.fetchall()[0][0]
