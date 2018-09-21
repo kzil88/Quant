@@ -18,7 +18,6 @@ if __name__ == '__main__':
         cursor.execute(sql_done_set2)
         done_set2 = cursor.fetchall()
         cur_open_end_dt = done_set2[0][0]
-
         start_dt = (datetime.datetime.strptime(cur_end_dt,'%Y-%m-%d') + datetime.timedelta(days=1)).strftime('%Y-%m-%d')
         end_dt = (datetime.datetime.now()).strftime('%Y-%m-%d')
 
