@@ -129,7 +129,6 @@ if __name__ == '__main__':
         predict = 0
         if len(done_predict) != 0:
             predict = int(done_predict[0][0])
-
         print(str(cnt) + ' of total ' + str(len(stock_pool))+ 'Stock : ' + str(stock) + '   ACC : ' + str(acc) + '   RECALL : ' + str(recall) + '   ACC_NEG : ' + str(acc_neg) + '   F1 : ' + str(f1))
         sql_final_insert = "insert into good_pool_all(state_dt,stock_code,acc,recall,f1,acc_neg,bz,predict)values('%s','%s','%.4f','%.4f','%.4f','%.4f','%s','%s')" % (end_dt, stock, acc,recall,f1,acc_neg,'svm',str(predict))
         cursor.execute(sql_final_insert)
