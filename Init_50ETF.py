@@ -14,7 +14,6 @@ if __name__ == '__main__':
 
     temp_index = ts.bar(code='510050', conn = cons,freq='D',end_date=end_dt,ma=[5,10,20,30,60])
     print(temp_index)
-
     c_len = temp_index.shape[0]
     #close_list = [x[0] for x in np.array(temp_index.ix[:,[2]])]
     #close_list = close_list[::-1]
