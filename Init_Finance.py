@@ -37,7 +37,6 @@ if __name__ == '__main__':
             except Exception as exp:
                 print(exp)
                 continue
-
         con_sql2 = "select distinct stock_code from stock_finance a where a.state_dt = '%s'"%(state_dt)
         cursor.execute(con_sql2)
         db.commit()
