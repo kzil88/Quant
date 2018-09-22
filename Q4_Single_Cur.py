@@ -11,7 +11,6 @@ import tushare as ts
 
 
 
-
 if __name__ == '__main__':
 
     ans = ts.get_today_all()
