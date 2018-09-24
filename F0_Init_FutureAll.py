@@ -4,6 +4,7 @@ import numpy as np
 import pymysql
 import re
 
+
 if __name__ == '__main__':
     end_dt = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%Y-%m-%d')
     db = pymysql.connect(host='127.0.0.1', user='root', passwd='admin', db='future', charset='utf8')
