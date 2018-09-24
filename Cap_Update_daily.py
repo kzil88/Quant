@@ -1,7 +1,6 @@
 import pymysql
 
 def cap_update_daily(state_dt):
-    
     para_norisk = (1.0 + 0.04/365)
     db = pymysql.connect(host='127.0.0.1', user='root', passwd='admin', db='stock', charset='utf8')
     cursor = db.cursor()
