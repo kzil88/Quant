@@ -6,7 +6,6 @@ import re
 
 if __name__ == '__main__':
 
-
     # 建测试时间序列（筛选出交易日序列）
     ts.set_token('3b7f5162be5869ccae917f5acb3f764c289d5961340737d3645f4516')
     pro = ts.pro_api()
