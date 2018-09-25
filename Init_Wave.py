@@ -6,7 +6,6 @@ import re
 
 def update_bigorder(stock_pool,date_seq):
     cons = ts.get_apis()
-
     # 建立数据库连接,剔除已入库的部分
     db = pymysql.connect(host='127.0.0.1', user='root', passwd='admin', db='stock', charset='utf8')
     cursor = db.cursor()
