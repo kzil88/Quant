@@ -14,7 +14,6 @@ if __name__ == '__main__':
     train = dc.data_train
     target = dc.data_target
 
-
     model = Sequential()
     model.add(Dense(64, activation='linear', input_dim=13))
     model.add(Dropout(0.5))
