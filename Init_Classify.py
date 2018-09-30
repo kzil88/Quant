@@ -9,7 +9,6 @@ if __name__ == '__main__':
     # 建立数据库连接,剔除已入库的部分
     db = pymysql.connect(host='127.0.0.1', user='root', passwd='admin', db='stock', charset='utf8')
     cursor = db.cursor()
-
     temp1 = ts.get_concept_classified()
     temp1mid = np.array(temp1)
     print('Init_Classify  ===>> 1 of 9. Concept')
