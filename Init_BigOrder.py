@@ -14,7 +14,6 @@ if __name__ == '__main__':
     cursor.execute(sql_select)
     done_set = cursor.fetchall()
     batch_cnt = 1
-
     # 大单数据统计（30万交易额以上）:
     try:
         while len(done_set) > 0:
