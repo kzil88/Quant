@@ -9,6 +9,7 @@ if __name__ == '__main__':
     db = pymysql.connect(host='127.0.0.1', user='root', passwd='admin', db='stock', charset='utf8')
     cursor = db.cursor()
 
+    
     cons = ts.get_apis()
     time_temp = datetime.datetime.now() - datetime.timedelta(days=1)
     end_dt = time_temp.strftime('%Y-%m-%d')
