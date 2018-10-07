@@ -10,6 +10,7 @@ if __name__ == '__main__':
     db = pymysql.connect(host='127.0.0.1', user='root', passwd='admin', db='future', charset='utf8')
     cursor = db.cursor()
     cons = ts.get_apis()
+    
     future_code = 'RU1805'
     try:
         temp_day = ts.bar(future_code, conn=cons, asset='X', ma=[5, 10, 20, 30, 60],end_date=end_dt)
