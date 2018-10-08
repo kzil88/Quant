@@ -51,6 +51,7 @@ class CS(object):
             in_code, start_dt, end_dt)
             cursor.execute(sql_done_set)
             done_set = cursor.fetchall()
+            
             if len(done_set) == 0:
                 raise Exception
             for i in range(len(done_set)):
