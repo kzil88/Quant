@@ -17,6 +17,7 @@ if __name__ == '__main__':
     done_set = cursor.fetchall()
     date_seq = [x[0] for x in done_set]
 
+    
     for i in range(1,len(date_seq)):
         #ans = Choose.ChooseMain(date_seq[i])
         ans = 6
