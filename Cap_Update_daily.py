@@ -30,4 +30,5 @@ def cap_update_daily(state_dt):
     sql_insert = "insert into my_capital(capital,money_lock,money_rest,bz,state_dt)values('%.2f','%.2f','%.2f','%s','%s')"%(new_total_cap,new_lock_cap,new_cash_cap,str('Daily_Update'),state_dt)
     cursor.execute(sql_insert)
     db.commit()
+    
     return 1
