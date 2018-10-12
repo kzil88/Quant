@@ -7,6 +7,7 @@ def filter_main(stock_new,state_dt,predict_dt):
     db = pymysql.connect(host='127.0.0.1', user='root', passwd='admin', db='stock', charset='utf8')
     cursor = db.cursor()
 
+    
     #先更新持股天数
     sql_update_hold_days = 'update my_stock_pool w set w.hold_days = w.hold_days + 1'
     cursor.execute(sql_update_hold_days)
