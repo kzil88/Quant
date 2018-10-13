@@ -5,6 +5,7 @@ import pymysql
 import re
 import talib as ta
 
+
 if __name__ == '__main__':
     db = pymysql.connect(host='127.0.0.1', user='root', passwd='admin', db='stock', charset='utf8')
     cursor = db.cursor()
