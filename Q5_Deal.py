@@ -10,7 +10,6 @@ class Deal(object):
     stock_map3 = {}
     stock_all = []
     ban_list = []
-    
 
     def __init__(self):
         # 建立数据库连接
