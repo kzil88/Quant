@@ -4,6 +4,7 @@ import numpy as np
 import pymysql
 import calendar
 
+
 if __name__ == '__main__':
 
     # 建立数据库连接,剔除已入库的部分
