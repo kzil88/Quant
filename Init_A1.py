@@ -6,7 +6,6 @@ import re
 
 if __name__ == '__main__':
 
-    
     # 建测试时间序列（筛选出交易日序列）
     cons = ts.get_apis()
     start_dt = '2006-01-01'
