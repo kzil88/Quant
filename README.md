@@ -69,6 +69,8 @@ uploaded Q5_GoodPool.py
 uploaded Q5_Operator.py	
 uploaded Q5_Show_Finance.py
 uploaded Q5_main.py	
+uploaded Q6_Deal.py	
+
 
 
 
