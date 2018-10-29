@@ -5,6 +5,7 @@ import DC
 
 def goodpool_init(state_dt):
 
+    
     db = pymysql.connect(host='127.0.0.1', user='root', passwd='admin', db='stock', charset='utf8')
     cursor = db.cursor()
     sql_select = "select distinct stock_code from stock_all a where a.state_dt = '%s'"%(str(state_dt))
