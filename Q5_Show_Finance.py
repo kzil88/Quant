@@ -12,6 +12,7 @@ if __name__ == '__main__':
     state_dt = datetime.datetime.now().strftime('%Y-%m-%d')
 
     stock_pool = ['300500']
+    
     for stock in stock_pool:
         print('******************************   股票代码 :  ' + str(stock) + '   Single / AVG(C_Indust)   **************************************')
         sql_select = "select distinct c_indust from stock_classify a where a.stock_code = '%s'"%(stock)
