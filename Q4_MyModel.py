@@ -12,7 +12,6 @@ def svm_test(stock,end_dt):
     cursor.execute(sql_truncate_model_test)
     db.commit()
 
-    
     model_test_date_start = (datetime.datetime.strptime(end_dt, '%Y-%m-%d') - datetime.timedelta(days=90)).strftime(
         '%Y-%m-%d')
     sql_model_test_date_seq = "select prevTradeDate from stock_tradecalall a where a.calendarDate >= '%s' and a.calendarDate <= '%s' and a.exchangeCD = 'XSHG' and isOpen = 1 order by a.prevTradeDate asc" % (
