@@ -4,6 +4,7 @@ import GoodPool as gp
 import Filter
 
 if __name__ == '__main__':
+    
     # 建立数据库连接,回测时间序列
     #time_temp = datetime.datetime.now() - datetime.timedelta(days=333)
     #date_seq_start = time_temp.strftime('%Y-%m-%d')
