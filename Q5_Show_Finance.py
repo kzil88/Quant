@@ -77,6 +77,7 @@ if __name__ == '__main__':
             print('|   经营现金净流量 对 负债 比率 :   ' + str(resu_single[33]) + '  /  ' + str(resu_avg[32]))
             print('|   现金流量 比率 :   ' + str(resu_single[34]) + '  /  ' + str(resu_avg[33]))
             print('|---------------------------------------------------------------------------------')
+            
     print('ALL Finished!!')
 
 
