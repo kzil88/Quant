@@ -10,7 +10,6 @@ import talib as ta
 import pymysql
 
 
-
 class data_collect2(object):
     code = ''
     date_seq = []
