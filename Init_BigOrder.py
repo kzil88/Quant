@@ -8,6 +8,8 @@ if __name__ == '__main__':
     cons = ts.get_apis()
 
     
+    
+    
     # 建立数据库连接,剔除已入库的部分
     db = pymysql.connect(host='127.0.0.1', user='root', passwd='admin', db='stock', charset='utf8')
     cursor = db.cursor()
