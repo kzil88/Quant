@@ -2,6 +2,7 @@ import pymysql.cursors
 import Deal
 import Operator
 
+
 def filter_main(stock_new,state_dt,predict_dt,year):
     # 建立数据库连接
     db = pymysql.connect(host='127.0.0.1', user='root', passwd='admin', db='stock', charset='utf8')
