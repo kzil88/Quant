@@ -10,6 +10,7 @@ import copy
 import tushare as ts
 import pymysql
 
+
 def Signal(coin_symbol,start_dt,end_dt,para_min,para_up,para_low,show_len):
     cons = ts.get_apis()
 
