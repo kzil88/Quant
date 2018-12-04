@@ -11,6 +11,7 @@ class Deal(object):
     stock_all = []
     ban_list = []
 
+    
     def __init__(self):
         # 建立数据库连接
         db = pymysql.connect(host='127.0.0.1', user='root', passwd='admin', db='stock', charset='utf8')
