@@ -18,7 +18,6 @@ if __name__ == '__main__':
 
     for date in date_seq:
 
-        
         try:
             temp_day = ts.sh_margin_details(start=date,end=date)
             temp_daymid = np.array(temp_day)
