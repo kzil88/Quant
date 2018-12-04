@@ -11,7 +11,6 @@ import random
 import pymysql.cursors
 
 
-
 class CS(object):
     code = ''
     date_seq = []
